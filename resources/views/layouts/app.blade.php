@@ -19,7 +19,7 @@
     @include('partials.header')
 
     <main class="bg-light">
-        @yield('content')
+        @yield('comics-list')
     </main>
 
     @include('partials.footer')
