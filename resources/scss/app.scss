@@ -11,12 +11,17 @@
 :root {
     --ms-header-height: 100px;
     --ms-footer-height: 80px;
+    --card-height: 300px
 }
 
 ////////////
 
 body {
     background-color: #232323;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 header {
@@ -29,6 +34,7 @@ main{
     height: calc((100vh - var(--ms-header-height)) - var(--ms-footer-height));
     background-image: url("/resources/images/jumbotron.jpg");
     background-size: cover;
+    overflow-y: auto;
 }
 
 #ms-header {
@@ -49,12 +55,44 @@ main{
 }
 
 #search-bar {
-    border-radius: 10px;
-    padding-left: 10px;
+    margin-left: 25px;
+    border-bottom: 1px solid #023f7b;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 5px;
+    padding: 0 5px;
+    background-color: #F8F9FA;
+    text-align: right;
 }
 
 .ms-navbar {
+    height: 100%;
     padding: 8px 20px;
+}
+
+col {
+    height: var(--card-height);
+    width: calc(100% / 2);
+}
+
+.ms-card {
+    margin: 20px 0;
+    height: var(--card-height);
+
+    img {
+        border-radius: 5px;
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+.ms-card:hover {
+    border: 1px solid #0c7cec;
+}
+
+.card-body {
+    padding: 0;
 }
 
 .signup-btn {
