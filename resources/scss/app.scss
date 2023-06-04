@@ -1,1 +1,89 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// VARIABLES
+
+:root {
+    --ms-header-height: 100px;
+    --ms-footer-height: 80px;
+}
+
+////////////
+
+body {
+    background-color: #232323;
+}
+
+header {
+    .logo {
+        width: 65px;
+    }
+}
+
+main{
+    height: calc((100vh - var(--ms-header-height)) - var(--ms-footer-height));
+    background-image: url("/resources/images/jumbotron.jpg");
+    background-size: cover;
+}
+
+#ms-header {
+    height: var(--ms-header-height);
+}
+
+.list-title {
+    display: inline-block;
+    color: white;
+    background-color: #0c7cec;
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+
+#ms-footer {
+    height: var(--ms-footer-height);
+    padding: 8px 20px;
+}
+
+#search-bar {
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.ms-navbar {
+    padding: 8px 20px;
+}
+
+.signup-btn {
+    padding: 5px 10px;
+    background-color: #232323;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid #0c7cec;
+}
+
+.signup-btn:hover {
+    background-color: white;
+    color: #0c7cec;
+    border: 1px solid #023f7b;
+}
+
+.ul-follow-us {
+    padding: 0;
+    margin: 0;
+}
+
+.ul-follow-us > li {
+    margin-right: 50px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.follow-icons {
+    color: #a3a3a3;
+}

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('comics-list')
-    <h2>COMICS LIST</h2>
+    <div class="container list-container">
+        <h5 class="list-title">COMICS LIST</h5>
+    </div>
 @endsection
